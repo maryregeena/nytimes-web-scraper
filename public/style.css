@@ -1,0 +1,21 @@
+body {
+  background: url("images/new-york-times.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.scrape{
+  margin:5px;
+}
+
+.hide{
+  visibility: hidden;
+}
+
+.articles{
+  margin-top:10px;
+}
+
+

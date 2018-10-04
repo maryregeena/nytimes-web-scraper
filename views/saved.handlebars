@@ -1,0 +1,23 @@
+
+<div class="container articles">
+    <div class="row">
+        <div class="col-12">
+            {{#each articles}}
+            <div class="card">
+                <div class="card-header">
+                    <span id="title-{{this.id}}"> {{this.title}}</span>
+                    <span id="link-{{this.id}}" class="hide">http://www.nytimes.com{{this.link}}</span>
+                    <span><button type="button" id="btn-delete-{{this.id}}" onclick="deleteArticle('{{this.id}}')" class="btn btn-danger float-right">Delete
+                            Article</button></span>
+
+                </div>
+                <div class="card-body">
+                    <a href="http://www.nytimes.com{{this.link}}"><span> {{this.title}}</span></a>
+                </div>
+            </div>
+            <br>
+            {{/each}}
+        </div>
+    </div>
+
+</div>
